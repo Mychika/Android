@@ -1,4 +1,4 @@
-package com.example.ocane.android_foucrier_plaisant;
+package com.example.ocane.android;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

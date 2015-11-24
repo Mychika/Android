@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/paramButton"
-        android:id="@+id/button"
+        android:id="@+id/paramButton"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -20,8 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/prochainButton"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
+        android:id="@+id/prochainButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="67dp" />
 
@@ -29,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/horaireButton"
-        android:id="@+id/button3"
+        android:id="@+id/horaireButton"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
@@ -37,8 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/planButton"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
+        android:id="@+id/planButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="67dp" />
 
@@ -46,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ligneButton"
-        android:id="@+id/button5"
+        android:id="@+id/ligneButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

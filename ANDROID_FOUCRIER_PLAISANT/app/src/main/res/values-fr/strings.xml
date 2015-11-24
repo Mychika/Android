@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prochain train!</string>
+    <string name="paramButton">Paramètres</string>
+    <string name="prochainButton">Prochain train</string>
+    <string name="horaireButton">Horaires</string>
+    <string name="planButton">Plan</string>
+    <string name="ligneButton">Lignes</string>
+</resources>
