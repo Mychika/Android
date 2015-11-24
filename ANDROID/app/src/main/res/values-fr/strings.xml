@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Prochain Train!</string>
+    <string name="settingsButton">Paramètres</string>
+    <string name="nextButton">Prochain Train</string>
+    <string name="timeButton">Horaires</string>
+    <string name="mapButton">Plan</string>
+    <string name="lineButton">Lignes</string>
+    <string name="returnButton">Retour</string>
+</resources>

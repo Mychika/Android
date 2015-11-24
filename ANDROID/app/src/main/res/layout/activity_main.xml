@@ -10,8 +10,8 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/paramButton"
-        android:id="@+id/paramButton"
+        android:text="@string/settingsButton"
+        android:id="@+id/settingsButton"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -19,32 +19,33 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/prochainButton"
-        android:id="@+id/prochainButton"
+        android:text="@string/nextButton"
+        android:id="@+id/nextButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="67dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/horaireButton"
-        android:id="@+id/horaireButton"
+        android:text="@string/timeButton"
+        android:id="@+id/timeButton"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/planButton"
-        android:id="@+id/planButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="67dp" />
+        android:text="@string/mapButton"
+        android:id="@+id/mapButton"
+        android:layout_above="@+id/timeButton"
+        android:layout_alignLeft="@+id/lineButton"
+        android:layout_alignStart="@+id/lineButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ligneButton"
-        android:id="@+id/ligneButton"
+        android:text="@string/lineButton"
+        android:id="@+id/lineButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

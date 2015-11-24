@@ -7,8 +7,11 @@ public class Address {
     private String home;
     private String work;
 
-   public void changeAddress(String homeAddress, String workAddress){
-       home = homeAddress;
-       work = workAddress;
+   public void changeHome(String homeAddress){
+        home = homeAddress;
+   }
+
+   public void changeWork(String workAddress){
+        work = workAddress;
    }
 }

@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RadioGroup
+        android:id="@+id/radioLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="Français"
+            android:id="@+id/frenchRadio"
+            android:layout_weight="0.16"
+            android:checked="false"
+            android:clickable="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:id="@+id/englishRadio"
+            android:layout_weight="0.16"
+            android:checked="true"
+            android:clickable="true" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/returnButton"
+        android:id="@+id/returnButton"
+        android:layout_gravity="right" />
+
+    <EditText
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2" />
 
 </LinearLayout>

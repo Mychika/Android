@@ -23,17 +23,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Button myParamButton;
-        myParamButton = (Button) findViewById(R.id.paramButton);
+        Button mySettingsButton;
+        mySettingsButton = (Button) findViewById(R.id.settingsButton);
 
-        myParamButton.setOnClickListener(new View.OnClickListener() {
+        mySettingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Parametre.class);
+                Intent intent = new Intent(MainActivity.this, Settings.class);
 
                 //On démarre l'autre Activity
                 startActivity(intent);
-
             }
         });
     }

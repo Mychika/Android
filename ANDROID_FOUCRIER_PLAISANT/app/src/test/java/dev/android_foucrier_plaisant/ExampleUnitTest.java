@@ -1,4 +1,4 @@
-package com.example.ocane.android_foucrier_plaisant;
+package dev.android_foucrier_plaisant;
 
 import org.junit.Test;
 
