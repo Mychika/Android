@@ -19,6 +19,10 @@
         </activity>
         <activity android:name=".Map" >
         </activity>
+        <activity android:name=".Horaires" >
+        </activity>
+        <activity android:name=".Timetable" >
+        </activity>
     </application>
 
 </manifest>

@@ -7,7 +7,7 @@
     <RadioGroup
         android:id="@+id/radioLanguage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="150dp">
 
         <RadioButton
             android:layout_width="199dp"
@@ -31,72 +31,88 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Maison"
-            android:id="@+id/home" />
+            android:id="@+id/home"
+            android:textColor="#04060e" />
 
         <EditText
-            android:layout_width="227dp"
-            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
             android:id="@+id/newHome"
             android:hint="Ajouter maison"
             android:textColor="#030303"
             android:textColorHint="#edebeb"
             android:layout_centerHorizontal="true"
-            android:textCursorDrawable= "@null"/>
+            android:textCursorDrawable= "@null"
+            android:layout_marginLeft="5dp" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
             android:text="Valider"
             android:id="@+id/submitHome"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:background="#cbd8fc"
+            android:textColor="#04060e"
+            android:layout_marginLeft="5dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Travail"
-            android:id="@+id/work" />
+            android:id="@+id/work"
+            android:textColor="#04060e" />
 
         <EditText
-            android:layout_width="219dp"
-            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
             android:id="@+id/newWork"
             android:hint="Ajouter travail"
             android:textColor="#030303"
             android:textColorHint="#edebeb"
             android:layout_centerHorizontal="true"
-            android:textCursorDrawable= "@null"/>
+            android:textCursorDrawable= "@null"
+            android:layout_marginLeft="5dp" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
             android:text="Valider"
             android:id="@+id/submitWork"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:background="#cbd8fc"
+            android:textColor="#04060e"
+            android:layout_marginLeft="5dp" />
 
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
         android:text="Retour"
         android:id="@+id/returnButton"
-        android:layout_gravity="right" />
+        android:layout_gravity="right"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:background="#cbd8fc"
+        android:textColor="#04060e" />
 
 </LinearLayout>

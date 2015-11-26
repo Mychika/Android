@@ -16,8 +16,8 @@ import java.util.Date;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-    public static String newHome = "Add new home";
-    public static String newWork = "Add new work";
+    public static String newHome;
+    public static String newWork;
     public static Boolean isFrench = true;
 
     @Override
@@ -26,8 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (isFrench == true) {
             setContentView(R.layout.activity_main_fr);
+            newHome = "Ajouter maison";
+            newWork = "Ajouter travail";
         }else {
             setContentView(R.layout.activity_main);
+            newHome = "Add new home";
+            newWork = "Add new work";
         }
     }
 
@@ -68,6 +72,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Map.class);
+
+                //On démarre l'autre Activity
+                startActivity(intent);
+
+            }
+        });
+
+        Button timeButton;
+        timeButton = (Button) findViewById(R.id.timeButton);
+
+        timeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Timetable.class);
 
                 //On démarre l'autre Activity
                 startActivity(intent);
