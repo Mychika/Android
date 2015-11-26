@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (isFrench == true) {
             setContentView(R.layout.activity_main_fr);
         }else {
@@ -30,6 +34,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
+        if (isFrench == true) {
+            setContentView(R.layout.activity_main_fr);
+        } else {
+            setContentView(R.layout.activity_main);
+        }
+
+        SimpleDateFormat sdf = new SimpleDateFormat("HHmm");
+        String currentDateandTime = sdf.format(new Date());
+
+        Toast toast = Toast.makeText(getApplicationContext(), currentDateandTime, Toast.LENGTH_SHORT);
+        toast.show();
 
         Button settingsButton;
         settingsButton = (Button) findViewById(R.id.settingsButton);
@@ -56,11 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 //On démarre l'autre Activity
                 startActivity(intent);
 
-                if (isFrench == true) {
-                    setContentView(R.layout.activity_main_fr);
-                }else {
-                    setContentView(R.layout.activity_main);
-                }
             }
         });
     }

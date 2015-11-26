@@ -37,14 +37,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Home"
+            android:text="Maison"
             android:id="@+id/home" />
 
         <EditText
             android:layout_width="227dp"
             android:layout_height="60dp"
             android:id="@+id/newHome"
-            android:hint="Add new home"
+            android:hint="Ajouter maison"
             android:textColor="#030303"
             android:textColorHint="#edebeb"
             android:layout_centerHorizontal="true"
@@ -54,7 +54,7 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
+            android:text="Valider"
             android:id="@+id/submitHome"
             android:layout_gravity="right" />
 
@@ -69,14 +69,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Work"
+            android:text="Travail"
             android:id="@+id/work" />
 
         <EditText
             android:layout_width="219dp"
             android:layout_height="60dp"
             android:id="@+id/newWork"
-            android:hint="Add new work"
+            android:hint="Ajouter travail"
             android:textColor="#030303"
             android:textColorHint="#edebeb"
             android:layout_centerHorizontal="true"
@@ -86,17 +86,16 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
+            android:text="Valider"
             android:id="@+id/submitWork"
             android:layout_gravity="right" />
 
     </LinearLayout>
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return"
+        android:text="Retour"
         android:id="@+id/returnButton"
         android:layout_gravity="right" />
 

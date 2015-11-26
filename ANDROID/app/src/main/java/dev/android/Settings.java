@@ -18,7 +18,11 @@ public class Settings extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        if (MainActivity.isFrench == true) {
+            setContentView(R.layout.activity_settings_fr);
+        }else {
+            setContentView(R.layout.activity_settings);
+        }
     }
 
     @Override
@@ -40,8 +44,6 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 MainActivity.isFrench = false;
-                englishRadio.setChecked(true);
-                frenchRadio.setChecked(false);
             }
         });
 
@@ -49,8 +51,6 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 MainActivity.isFrench = true;
-                englishRadio.setChecked(false);
-                frenchRadio.setChecked(true);
             }
         });
 
@@ -67,7 +67,7 @@ public class Settings extends AppCompatActivity {
                     MainActivity.newHome = home.getText().toString();
                 }
 
-                Toast toast = Toast.makeText(getApplicationContext(), MainActivity.newHome, Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(),"Home: " + MainActivity.newHome + "added.", Toast.LENGTH_SHORT);
                 toast.show();
             }
         });
@@ -80,7 +80,7 @@ public class Settings extends AppCompatActivity {
                 if (work.getText().toString() != "") {
                     MainActivity.newWork = work.getText().toString();
                 }
-                Toast toast = Toast.makeText(getApplicationContext(),MainActivity.newWork, Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(),"Work: " + MainActivity.newWork + " added.", Toast.LENGTH_SHORT);
                 toast.show();
             }
         });
