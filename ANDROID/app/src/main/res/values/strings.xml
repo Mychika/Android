@@ -1,9 +1,5 @@
 <resources>
     <string name="app_name">Next Train!</string>
-    <string name="settingsButton">Settings</string>
-    <string name="nextButton">Next Train</string>
-    <string name="timeButton">Timetable</string>
-    <string name="mapButton">Map</string>
-    <string name="lineButton">Lines</string>
-    <string name="returnButton">Return</string>
+    <string name="title_activity_settings">Settings</string>
 </resources>
+

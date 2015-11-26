@@ -10,7 +10,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings"
+        android:text="Paramètres"
         android:id="@+id/settingsButton"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -19,7 +19,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Timetable"
+        android:text="Horaires"
         android:id="@+id/Timetable"
         android:layout_centerVertical="true"
         android:layout_alignRight="@+id/mapButton"
@@ -28,7 +28,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Map"
+        android:text="Plan"
         android:id="@+id/mapButton"
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material" />
@@ -36,7 +36,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lines"
+        android:text="Lignes"
         android:id="@+id/linesButton"
         android:layout_marginBottom="81dp"
         android:layout_alignParentBottom="true"
@@ -47,7 +47,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next train"
+        android:text="Prochain Train"
         android:id="@+id/trainButton"
         android:layout_below="@+id/mapButton"
         android:layout_alignLeft="@+id/mapButton"

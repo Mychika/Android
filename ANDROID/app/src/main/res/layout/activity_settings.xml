@@ -15,8 +15,8 @@
             android:text="Français"
             android:id="@+id/frenchRadio"
             android:layout_weight="0.16"
-            android:checked="false"
-            android:clickable="true" />
+            android:clickable="true"
+            android:checked="false" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -24,27 +24,77 @@
             android:text="English"
             android:id="@+id/englishRadio"
             android:layout_weight="0.16"
-            android:checked="true"
             android:clickable="true" />
 
     </RadioGroup>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Home"
+            android:id="@+id/home" />
+
+        <EditText
+            android:layout_width="227dp"
+            android:layout_height="60dp"
+            android:id="@+id/newHome"
+            android:hint="Add new home"
+            android:textColor="#030303"
+            android:textColorHint="#edebeb"
+            android:layout_centerHorizontal="true"
+            android:textCursorDrawable= "@null"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitHome"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Work"
+            android:id="@+id/work" />
+
+        <EditText
+            android:layout_width="219dp"
+            android:layout_height="60dp"
+            android:id="@+id/newWork"
+            android:hint="Add new work"
+            android:textColor="#030303"
+            android:textColorHint="#edebeb"
+            android:layout_centerHorizontal="true"
+            android:textCursorDrawable= "@null"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitWork"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/returnButton"
+        android:text="Return"
         android:id="@+id/returnButton"
         android:layout_gravity="right" />
-
-    <EditText
-        android:layout_width="258dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_gravity="center_horizontal" />
-
-    <EditText
-        android:layout_width="281dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText2" />
 
 </LinearLayout>
